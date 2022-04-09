@@ -7,6 +7,7 @@ const CountryItem = ({ flags, name, capital, region, area, population }: ICountr
 		type: 'area',
 		value: area,
 	};
+
 	const labelPopulation: IBadge = {
 		color: Color.Secondary,
 		type: 'population',
