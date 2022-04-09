@@ -1,26 +1,21 @@
-import countryData from './country-data.json';
 import CountryList from './components/CountryList';
-console.log(countryData);
+import countryData from './country-data.json';
+import { ICountry, Color } from './types';
 
+const App = () => {
+	const countries: ICountry[] = countryData.map((country) => ({
+		name: country.name.common,
+		capital: country.capital[0],
+		population: country.population,
+		flags: country.flags.svg,
+		area: country.area,
+		region: country.region,
+	}));
 
-console.log(countryData.map(({area, capital,name, population, flags, region}) =>  {return name.common,capital[0], population, flags.svg, area, region})
-)
-interface ICountry {
-	area: number,
-	capital: string,
-	name: string,
-	population: number,
-	flags: string,
-	region: string
-}
-
-
-const App = (countryData: {}[]) => {
-	
 	return (
-		<div className='app'>
-			
-			<CountryList/>
+		<div className="container">
+			<h1 className="display-1">Country List</h1>
+			<CountryList countries={countries} />
 		</div>
 	);
 };

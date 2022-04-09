@@ -1,19 +1,16 @@
-import React from 'react';
-// import Badge from './Badge';
-// import CountryItem from './CountryItem';
-const CountryList = () => {
-	return (
-		// <ul>
-		//     <CountryItem/>
-		//     {/* <Badge/> */}
-		// </ul>
+import { ICountry } from './../types';
+import CountryItem from './CountryItem';
 
+interface ICountryList {
+	countries: ICountry[];
+}
+
+const CountryList = ({ countries }: ICountryList) => {
+	return (
 		<ul className="list-group">
-			<li className='list-group-item'>An item</li>
-			<li className="list-group-item">A second item</li>
-			<li className="list-group-item">A third item</li>
-			<li className="list-group-item">A fourth item</li>
-			<li className="list-group-item">And a fifth one</li>
+			{countries.map((country) => (
+				<CountryItem {...country} />
+			))}
 		</ul>
 	);
 };
