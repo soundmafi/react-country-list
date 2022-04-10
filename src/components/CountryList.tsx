@@ -9,7 +9,7 @@ const CountryList = ({ countries }: ICountryList) => {
 	return (
 		<ul className="list-group">
 			{countries.map((country) => (
-				<CountryItem {...country} />
+				<CountryItem key = {country.name} {...country} />
 			))}
 		</ul>
 	);
