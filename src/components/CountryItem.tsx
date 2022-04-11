@@ -8,8 +8,8 @@ const CountryItem = ({ flags, name, capital, region, area, population }: ICountr
 			<span className="col mx-5">{name}</span>
 			<span className="col">{capital}</span>
 			<span className="col">{region}</span>
-			<Badge color={Color.Primary} type = {'area'} value = {area} />
-			<Badge color={Color.Secondary} type = {'population'} value = {population} />
+			<Badge color={Color.Primary} type={'area'} value={area} />
+			<Badge color={Color.Secondary} type={'population'} value={population} />
 		</li>
 	);
 };

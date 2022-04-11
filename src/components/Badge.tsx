@@ -1,9 +1,9 @@
-import { Color, BadgeLabel} from './../types';
+import { Color, BadgeLabel } from './../types';
 
 interface IBadge {
-    color: Color;
-    type: BadgeLabel;
-    value: Number
+	color: Color;
+	type: BadgeLabel;
+	value: Number;
 }
 
 const Badge = ({ color, type, value }: IBadge) => {

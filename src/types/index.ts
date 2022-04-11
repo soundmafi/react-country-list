@@ -1,10 +1,10 @@
 export interface ICountry {
-	area: number,
-	capital: string,
-	name: string,
-	population: number,
-	flags: string,
-	region: string
+	area: number;
+	capital: string;
+	name: string;
+	population: number;
+	flags: string;
+	region: string;
 }
 
 export const enum Color {
@@ -15,7 +15,7 @@ export const enum Color {
 	Warning = 'warning',
 	Info = 'info',
 	Light = 'light',
-	Dark = 'dark'
+	Dark = 'dark',
 }
 
 export type BadgeLabel = 'area' | 'population';
