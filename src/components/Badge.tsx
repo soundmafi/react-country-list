@@ -1,4 +1,10 @@
-import { IBadge } from './../types';
+import { Color, BadgeLabel} from './../types';
+
+interface IBadge {
+    color: Color;
+    type: BadgeLabel;
+    value: Number
+}
 
 const Badge = ({ color, type, value }: IBadge) => {
 	return (

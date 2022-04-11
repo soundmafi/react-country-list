@@ -7,12 +7,6 @@ export interface ICountry {
 	region: string
 }
 
-export interface IBadge {
-    color: Color;
-    type: BadgeLabel;
-    value: Number
-}
-
 export const enum Color {
 	Primary = 'primary',
 	Secondary = 'secondary',
