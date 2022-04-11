@@ -1,6 +1,6 @@
 import CountryList from './components/CountryList';
 import countryData from './country-data.json';
-import { ICountry, Color } from './types';
+import { ICountry } from './types';
 
 const App = () => {
 	const countries: ICountry[] = countryData.map((country) => ({
