@@ -4,7 +4,7 @@ import Badge from './Badge';
 const CountryItem = ({ flags, name, capital, region, area, population }: ICountry) => {
 	return (
 		<li className="list-group-item d-flex justify-content-between align-items-center">
-			<img className="col-md-1 float-left" src={`${flags}`} alt="Country flag" />
+			<img className="col-md-1 float-left" src={flags} alt="Country flag" />
 			<span className="col mx-5">{name}</span>
 			<span className="col">{capital}</span>
 			<span className="col">{region}</span>
